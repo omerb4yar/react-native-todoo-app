@@ -4,10 +4,10 @@ A minimal and modern Todo application built with React Native and Expo.
 
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="src/assets/screenshots/CalendarScreen.jpg" width="30%" />
-  <img src="src/assets/screenshots/CalendarScreen.jpg" width="30%" />
-  <img src="src/assets/screenshots/ProfileScreen.jpg" width="30%" />
+<p align="center" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+  <img src="src/assets/screenshots/HomeScreen.jpg" width="250" />
+  <img src="src/assets/screenshots/CalendarScreen.jpg" width="250" />
+  <img src="src/assets/screenshots/ProfileScreen.jpg" width="250" />
 </p>
 
 ## 🚀 Features
