@@ -2,12 +2,11 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack"
 
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import Home from "../screens/MainScreens/HomeScreen";
 import AuthStack from "../screens/AuthStack/AuthStack";
 import { getAuth, onAuthStateChanged } from "@firebase/auth";
 import HomeNavigation from "./HomeNavigation";
-import { RootStackParamList } from "../types/navigation/RootStackParamList";
 import SplashScreen from "../screens/SplashScreen";
+import { RootStackParamList } from "../types/Navigation.types";
 
 const auth = getAuth();
 

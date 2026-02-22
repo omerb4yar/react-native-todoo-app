@@ -1,8 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { Ionicons } from '@expo/vector-icons'
-import Color from '../assets/Color'
 import Logo from './Logo/Logo'
 
 interface HeaderProps {}

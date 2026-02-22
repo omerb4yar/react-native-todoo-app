@@ -1,5 +1,5 @@
 
-import { View, Text, Image, TouchableOpacity, Keyboard, ScrollView, RefreshControl } from 'react-native'
+import { View, Text, Image, Keyboard, ScrollView, RefreshControl } from 'react-native'
 import React, { useCallback, useMemo, useRef, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomButton from '../../../components/CustomButton/CustomButton';

@@ -1,8 +1,7 @@
-import React, { useMemo, useRef, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Button, ScrollView, View } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Calendar, DateData } from "react-native-calendars"
-import { MarkedDates } from 'react-native-calendars/src/types';
 import Color from '../../../assets/Color';
 import { useTodoContext } from '../../../context/TodoContext';
 import useTodos from '../../../hooks/useTodos';

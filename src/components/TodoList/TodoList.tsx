@@ -7,7 +7,6 @@ import Color from '../../assets/Color'
 import Todo from '../../models/Todo'
 import TodoCard from '../TodoCard'
 import EmptyTodoList from '../EmptyTodoList'
-import TextButton from '../TextButton'
 import { IconButton } from 'react-native-paper'
 import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons'
 

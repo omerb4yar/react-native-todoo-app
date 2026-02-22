@@ -4,7 +4,6 @@ import * as Yup from "yup"
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FormikForm from '../../components/Forms/FormikForm';
 import CustomButton from '../../components/CustomButton/CustomButton';
-import Icon from "@expo/vector-icons/MaterialCommunityIcons"
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import Color from '../../assets/Color';
 import WelcomeHeader from '../../components/WelcomeHeader';

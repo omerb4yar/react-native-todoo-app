@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, { SetStateAction, useState } from 'react'
 import CustomButton from './CustomButton/CustomButton'
 import Color from '../assets/Color'
-import { TodoProps } from '../types/components/ToDoItemType'
+import { TodoProps } from './TodoCard/TodoCard'
 
 type PriortySelectorType = {
     setPriorty : React.Dispatch<SetStateAction<TodoProps["priority"]>>

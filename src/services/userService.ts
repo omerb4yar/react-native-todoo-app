@@ -1,6 +1,6 @@
 import { createUserCredential } from "./firebase/auth";
 import { db } from "./firebase/firebaseConfig";
-import { addDoc, collection, doc, getDoc, query, serverTimestamp, setDoc, updateDoc, where, onSnapshot } from "firebase/firestore";
+import { doc, getDoc,serverTimestamp, setDoc, updateDoc,onSnapshot } from "firebase/firestore";
 import UserType from "../types/User/User.type";
 
 

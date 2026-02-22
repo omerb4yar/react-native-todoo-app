@@ -1,11 +1,10 @@
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import React, { useRef, useState } from 'react'
 import CustomButton from '../../components/CustomButton/CustomButton'
 import * as Yup from "yup"
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Color from '../../assets/Color'
 import OrDivider from '../../components/OrDivider'
-import LottieView from 'lottie-react-native'
 import { useMemo } from 'react'
 import BottomSheet from '@gorhom/bottom-sheet'
 import TermsAndPolicy from '../../components/TermsAndPolicy'
@@ -16,7 +15,6 @@ import WelcomeHeader from '../../components/WelcomeHeader'
 import TextButton from '../../components/TextButton/TextButton'
 import { showMessage } from 'react-native-flash-message'
 import { signInUser } from '../../services/firebase/auth'
-import { getAuth } from '@firebase/auth'
 
 const SignInSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Required'),

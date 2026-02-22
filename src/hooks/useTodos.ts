@@ -2,8 +2,6 @@ import { useCallback, useEffect, useState } from "react"
 import Todo from "../models/Todo"
 import { User } from "@firebase/auth";
 import { todoService } from "../services/todoService";
-import { userService } from "../services/userService";
-import { increment } from "firebase/firestore";
 
 export interface TodosOptions {
     isArchived?: boolean
