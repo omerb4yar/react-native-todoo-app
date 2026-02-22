@@ -5,16 +5,15 @@ A minimal and modern Todo application built with React Native and Expo.
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="./assets/HomeScreen.jpg" width="30%" />
-  <img src="./assets/CalenderScreen.jpg" width="30%" />
-  <img src="./assets/ProfileScreen.jpg" width="30%" />
+  <img src="./assets/screenshots/HomeScreen.jpg" width="30%" />
+  <img src="./assets/screenshots/CalendarScreen.jpg" width="30%" />
+  <img src="./assets/screenshots/ProfileScreen.jpg" width="30%" />
 </p>
 
 ## 🚀 Features
 
 - Create, update and delete tasks
 - Deadline support
-- Local push notifications
 - Firebase backend integration
 - Clean and minimal UI
 
@@ -40,10 +39,6 @@ Start the project:
 ```bash
 npx expo start
 ```
-
-## 🔔 Notifications
-
-The app sends local notifications when a task deadline is near.
 
 ## 📱 Platform
 
