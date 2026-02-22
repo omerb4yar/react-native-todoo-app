@@ -81,7 +81,7 @@ const AddTodoBottomSheet = forwardRef((props: AddTodoBottomSheetProps, bottomShe
                     onChangeText={(text) => setContent(text)} />
 
                 <Text style={styles.title}>Priorty</Text>
-                <PriortySelector setPriorty={setPriorty} />
+                <PriortySelector priortyState={priorty} setPriorty={setPriorty} />
 
                 <CustomButton
                     containerStyle={[styles.deadlineButton, deadline ? styles.filledDeadlineButton : null]}

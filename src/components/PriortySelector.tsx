@@ -5,17 +5,15 @@ import Color from '../assets/Color'
 import { TodoProps } from './TodoCard/TodoCard'
 
 type PriortySelectorType = {
-    setPriorty : React.Dispatch<SetStateAction<TodoProps["priority"]>>
+    setPriorty : React.Dispatch<SetStateAction<TodoProps["priority"]>>,
+    priortyState : TodoProps["priority"]
 }
 
 const PriortySelector = (
-    { setPriorty } : PriortySelectorType
+    { setPriorty, priortyState } : PriortySelectorType
 ) => {
 
-    const [selectedButton, setSelectedButton] = useState<TodoProps["priority"] | undefined>(undefined);
-
     const priortySetter = (priority : TodoProps["priority"]) => {
-        setSelectedButton(priority);
         setPriorty(priority)
     }
 
@@ -23,17 +21,17 @@ const PriortySelector = (
     <View style = {styles.container}>
         <CustomButton
             titleStyle = {{ color : Color.primary }}
-            containerStyle = {{backgroundColor : Color.primaryBg, elevation : 0, flex : 1, borderWidth : 3, borderColor : selectedButton == "low" ? Color.primary : "white"}}
+            containerStyle = {{backgroundColor : Color.primaryBg, elevation : 0, flex : 1, borderWidth : 3, borderColor : priortyState == "low" ? Color.primary : "white"}}
             title='Low'
             onPress={() => priortySetter("low")}/>
         <CustomButton
             titleStyle = {{ color : Color.orange }}
-            containerStyle = {{backgroundColor : Color.orangeBg, elevation : 0, flex : 1, borderWidth : 3, borderColor : selectedButton == "medium" ? Color.orange : "white"}}
+            containerStyle = {{backgroundColor : Color.orangeBg, elevation : 0, flex : 1, borderWidth : 3, borderColor : priortyState == "medium" ? Color.orange : "white"}}
             title='Middle'
             onPress={() => priortySetter("medium")}/>
         <CustomButton   
             titleStyle = {{ color : Color.danger }}
-            containerStyle = {{backgroundColor : Color.dangerBg, elevation : 0, flex : 1, borderWidth : 3, borderColor : selectedButton == "high" ? Color.danger : "white"}}
+            containerStyle = {{backgroundColor : Color.dangerBg, elevation : 0, flex : 1, borderWidth : 3, borderColor : priortyState == "high" ? Color.danger : "white"}}
             title='High'
             onPress={() => priortySetter("high")}/>
     </View>
