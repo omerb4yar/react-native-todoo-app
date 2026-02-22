@@ -7,7 +7,6 @@ import Header from '../../../components/Header'
 import { Button as PaperButton, Dialog, Portal, PaperProvider, Text as PaperText } from 'react-native-paper';
 import HomeStyle from './HomeScreen.style'
 import AddTodoBottomSheet from '../../../components/BottomSheets/AddTodoBottomSheet'
-import { TodoProps } from '../../../types/components/ToDoItemType'
 import { showMessage } from 'react-native-flash-message'
 import { getAuth } from '@firebase/auth'
 import Color from '../../../assets/Color'
@@ -15,10 +14,11 @@ import ProgressBarCard from '../../../components/ProgressBarCard'
 import { useTodoContext } from '../../../context/TodoContext'
 import TodoList from '../../../components/TodoList'
 import { ScrollView } from 'react-native-gesture-handler'
+import { TodoProps } from '../../../components/TodoCard/TodoCard'
 
 const auth = getAuth();
 
-const HomeScreen = ({ navigation, route }: any) => {
+const HomeScreen = () => {
 
 
 	const [progress, setProgress] = useState<number>(0);
